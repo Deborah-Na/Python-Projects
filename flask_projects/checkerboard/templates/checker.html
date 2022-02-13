@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <title>Checkerboard</title>
+</head>
+
+<body>
+    <h1>Checkerboard</h1>
+    <table>
+        {% for x in range(0,column): %}
+        <tr>
+            {% for i in range(0, row): %}
+                {% if (x+i) % 2 == 0 %}
+                    <td style="background-color: {{colorOne}};"></td>
+                {% else %}
+                    <td style="background-color: {{colorTwo}};"></td>
+                {% endif %}   
+            {% endfor %} 
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+
+</html>
