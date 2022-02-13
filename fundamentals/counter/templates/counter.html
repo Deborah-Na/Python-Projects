@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+    <title>Counter</title>
+</head>
+<body>
+    <h1>Counter</h1>
+    <h3>{{count}}</h3>
+    <div class="container">
+            <a href="/">CLICK ME</a>
+            <a href="/increase">Plus 2</a>
+            <a href="/reset">RESET</a>
+    </div>
+    <form action='/users' method='post'>
+        <input type='text' class="input" name='number' placeholder="Type any number">
+    </form>
+    
+</body>
+</html>
