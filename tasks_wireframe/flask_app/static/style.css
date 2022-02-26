@@ -1,0 +1,9 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+.navbar{
+    background-color: rgb(236, 140, 156);
+    color: rgba(255, 182, 47, 0.897);
+}
